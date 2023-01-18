@@ -1,0 +1,62 @@
+.notifications{
+   margin-top: 2.5rem;
+   padding-left: 1rem;
+
+   @media screen and (max-width: 450px) {
+      padding: 0 5px;
+   }
+}
+
+.notif-card{
+   padding: 0.5rem;
+   border-radius: 10px;
+   margin-top: 5px;
+   cursor: pointer;
+   transition: 0.2s ease-in-out;
+   position: relative;
+   font-size: 0.9rem;
+   &:hover{
+      transform: scale(1.01);
+   }
+}
+
+.notif-date{
+   color: gray;
+   font-size: 0.6rem;
+   font-weight: 500;
+}
+
+
+.notif{
+   background-color: var(--primary-color);
+   color: white;
+   small{
+      color: white;
+   }
+}
+
+.notif-card-inner{
+   display: flex;
+   align-items: center;
+
+   @media screen and (max-width: 450px) {
+      flex-direction: column;
+      text-align: center;
+   }
+}
+
+.notif-delete{
+   position: absolute;
+   font-size: 1.3rem;
+   top: 10%;
+   right: 1%;
+}
+
+.notif-seen{
+   background-color: none;
+   border: 1px solid var(--primary-color);
+   color: var(--dark-color);
+   svg{
+      color: gray;
+   }
+}

@@ -1,0 +1,114 @@
+.user-container{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 10px;
+
+   @media screen and (max-width: 727px) {
+      grid-template-columns: repeat(2,1fr);
+   }
+   @media screen and (max-width: 450px) {
+      grid-template-columns: 1fr;
+   }
+}
+
+.user-card{
+   background-color: var(--gray-color);
+   border-radius: 3px;
+   overflow: hidden;
+   cursor: pointer;
+   transition: 0.3s ease-in-out;
+   height: 190px;
+
+   &:hover{
+      transform: translateY(-5px);
+   }
+
+   a{
+      text-decoration: none;
+   }
+}
+
+//Home page
+.user-cover-container{
+   height: 100px;
+   overflow: hidden;
+   background-color: var(--primary-color);
+   z-index: 0;
+
+   img{
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      object-fit: cover;
+   }
+}
+
+.user-logo-wrapper{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.user-logo-container{
+   background-color: var(--primary-color);
+   width: 70px;
+   height: 70px;
+   border-radius: 100%;
+   border: 2px solid white;
+   overflow: hidden;
+   z-index: 8;
+   margin-top: -38px;
+
+   img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+}
+
+.user-card-info{
+   color: var(--dark-color);
+   text-align: center;
+   margin-top: 15px;
+   p{
+      font-size: 0.9rem;
+      font-size: 500;
+   }
+}
+
+.people-headers{
+   display: flex;
+   align-items: center;
+   margin-top: 1rem;
+   div{
+      font-size: 0.8rem;
+      color: rgb(211, 209, 209);
+      padding: 0.2rem 1rem;
+      cursor: pointer;
+   }
+   .people-header-active{
+      background-color: var(--primary-color);
+      border-radius: 30px;
+   }
+}
+
+.text-warning{
+   color: pink;
+   font-size: 0.7rem;
+}
+
+.btn-ban{
+   background-color: var(--purple-color);
+   padding: 0.5rem 1rem;
+   color: white;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: 0.2s ease-in-out;
+   &:hover{
+      opacity: 0.9;
+   }
+}
+
+.btn-unban{
+   background-color: var(--primary-color);
+}

@@ -1,0 +1,322 @@
+//Rooms
+.room-card{
+   border-radius: 3px;
+   overflow: hidden;
+   cursor: pointer;
+   transition: 0.3s ease-in-out;
+   position: relative;
+   cursor: default;
+
+   &:hover{
+      transform: translateY(-5px);
+   }
+}
+
+.room-img-container{
+   height: 120px;
+   overflow: hidden;
+
+   img{
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      object-fit: cover;
+   }
+}
+
+.room-card-bottom{
+   display: flex;
+}
+
+.room-logo-container{
+   background-color: var(--primary-color);
+   width: 70px;
+   height: 70px;
+   border-radius: 100%;
+   border: 2px solid white;
+   margin: 10px;
+   margin-top: -20px;
+   overflow: hidden;
+
+   img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+}
+
+.room-img-container{
+   background-color: var(--gray-color);
+}
+
+.roomName{
+   h3{
+      font-size: 0.7rem;
+   }
+}
+
+.room-logo-default{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+   font-size: 1.3rem;
+   margin-top: 18px;
+}
+
+.room-card{
+   position: relative;
+   cursor: default;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.room-name{
+   margin-top: 1.2rem;
+   line-height: 20px;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+
+   h2{
+      margin-bottom: 5px;
+   }
+   .requested{
+      background-color: rgb(255, 183, 0);
+      color: white;
+   
+      &:hover{
+         opacity: 0.9;
+      }
+   }
+   .joined{
+      background-color: var(--primary-color);
+      color: white;
+   }
+
+   @media screen and (max-width: 450px) {
+      flex-direction: column;
+      .room-btn{
+         position: absolute;
+         top: 54%;
+         right: 2%;
+      }
+   }
+}
+.roomName{
+   color: var(--dark-color);
+   margin-top: 5px;
+   line-height:80%;
+   a{
+      color: var(--dark-color);
+      &:hover{
+         text-decoration: underline;
+         text-decoration-color: var(--primary-color);
+      }
+   }
+   button{
+      position: absolute;
+      bottom: 37%;
+      right: 3%;
+      padding: 5px 15px;
+      border: none;
+      outline: none;
+      border-radius: 30px;
+      margin-top: 5px;
+      cursor: pointer;
+      background-color: white;
+
+      &:hover{
+         opacity: 0.9;
+      }
+   }
+   .requested{
+      background-color: rgb(255, 183, 0);
+      color: white;
+   
+      &:hover{
+         opacity: 0.9;
+      }
+   }
+   .joined{
+      background-color: var(--primary-color);
+      color: white;
+   }
+   
+   small{
+      color: var(--dark-color);
+      font-size: 0.6rem;
+   }
+}
+
+.restore-delete-btn{
+   display: flex;
+   float: right;
+   button{
+      cursor: pointer;
+      padding: 10px;
+      outline: none;
+      border: none;
+      font-size: 0.7rem;
+      background-color: transparent;
+   }
+}
+
+.restore-room-btn{
+   color: var(--primary-color);
+}
+
+.delete-room-btn{
+   color: var(--purple-color);
+}
+
+.room-btn{
+   padding: 5px 15px;
+   border: none;
+   outline: none;
+   border-radius: 30px;
+   cursor: pointer;
+   height: 30px;
+   &:hover{
+      opacity: 0.9;
+   }
+}
+
+.room-box{
+   position: relative;
+}
+
+.room-actions{
+   display: flex;
+   position: absolute;
+   bottom: 3%;
+   right: 3%;
+   font-size: 0.7rem;
+
+   div{
+      cursor: pointer;
+      font-weight: bold;
+   }
+
+   :nth-child(2), :nth-child(3){
+      padding-left: 15px;
+   }
+
+   :nth-child(1), :nth-child(2){
+      color: var(--purple-color);
+   }
+
+   @media screen and (max-width: 450px){
+      position: initial;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1rem;
+   }
+}
+
+.share-btn{
+   padding: 0.8rem 1rem;
+   border-radius: 3px;
+   background-color: var(--primary-color);
+   color: white;
+   cursor: pointer;
+   border: none;
+   transition: 0.3s ease;
+   &:hover{
+      opacity: 0.9;
+   }
+}
+
+.about-textarea{
+   width: 100%;
+   height: 100px;
+   background-color: var(--secondary-color);
+   outline: none;
+   border: none;
+   border-radius: 3px;
+   padding: 0.5rem;
+   color: white;
+}
+
+.member-card{
+   background-color: var(--gray-color);
+   padding: 1rem 0.5rem;
+   padding-top: 1.3rem;
+   border-radius: 5px;
+   transition: 0.3s ease-in-out;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 180px;
+   position: relative;
+
+   .member-logo-container{
+      width: 70px;
+      height: 70px;
+      overflow: hidden;
+      border-radius: 100%;
+      border: 2px solid var(--primary-color);
+      background-color: var(--primary-color);
+      color: white;
+      img{
+         width: 100%;
+         height: 100%;
+      }
+   }
+
+   .member-default-logo{
+      color: white;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      font-size: 1.5rem;
+   }
+
+   .member-info{
+      font-size: 0.8rem;
+      text-align: center;
+      margin-top: 0.8rem;
+      p{
+         color: black;
+         font-weight: 500;
+         &:hover{
+            text-decoration: underline;
+         }
+      }
+      small{
+         color: black;
+      }
+   }
+
+   .remove-text{
+      font-size: 0.7rem;
+      color: var(--purple-color);
+      font-weight: bold;
+      cursor: pointer;
+      position: absolute;
+      top: 5%;
+      right: 5%;
+   }
+
+   .join-delete-request-action{
+      display: flex;
+      margin-top: 10px;
+      font-weight: 500;
+      p{
+         color: white;
+         font-size: 0.7rem;
+         cursor: pointer;
+      }
+      :nth-child(1){
+         color:  var(--primary-color);
+         font-weight: bold;
+      }
+      :nth-child(2){
+         margin-left: 10px;
+         color: var(--purple-color);
+         font-weight: bold;
+      }
+   }
+}

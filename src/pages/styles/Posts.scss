@@ -1,0 +1,68 @@
+.room-comment-div{
+   background-color: var(--dark-secondary-color);
+   padding: 10px;
+   border-radius: 10px;
+}
+
+.discussion-body-info{
+   padding-left: 2px;
+   font-size: 0.9rem;
+}
+
+.room-body{
+   background-color: transparent;
+   padding: 0 0.5rem;
+}
+
+.room-date{
+   color: gray;
+   font-size: 0.7rem;
+   padding-top: -1rem;
+}
+
+.comment-icon{
+   color: rgb(179, 179, 179);
+   svg{
+      font-size: 1.4rem;
+   }
+  
+}
+
+.discussion-img-wrapper{
+   display: flex;
+}
+
+.discussion-img-container{
+   width: 150px;
+   height: 150px;
+   border-radius: 10px;
+   overflow: hidden;
+   margin: 5px;
+   cursor: pointer;
+
+   img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.3s ease-in-out;
+
+      &:hover{
+         scale: (1.1);
+      }
+   }
+}
+
+.link-discussion{
+   text-decoration: none;
+   color: var(--primary-color) !important;
+}
+
+.disc-icons{
+   margin-left: 3.8rem;
+   margin-top: 1.7rem;
+}
+
+.comments-div{
+   border-top: 1px solid var(--secondary-color);
+   padding-top: 1rem;
+}
